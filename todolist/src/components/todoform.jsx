@@ -8,7 +8,7 @@ const Todoform = ({addTodo}) => {
     e.preventDefault();
 
    if (!value) {
-     alert("no blank todo!");
+     alert("no blank Text..!!!");
      return;
     }
 
