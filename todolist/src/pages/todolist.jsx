@@ -9,13 +9,24 @@ const Todolist = () => {
   const [todos, setTodos] = useState([
     { text: "leaning react" },
     { text: "leaning react hook" },
-    { text: "leaning refactor in react" }
+    { text: "leaning styling in react" }
   ]);
+
+  const [showAdd, setShowAdd] = useState(false);
+
+  const addTodo = value => {
+    const addedTodo = [...todos, { text: value }];
+
+    setTodos(addedTodo);
+  };
+
+  const showAddToggle = () => setShowAdd(!showAdd);
+
 
   return (
     <Paper>
-      <Header />
-      <Todoform />
+      <Header showAddToggle={showAddToggle} />
+      <Todoform addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
   );
