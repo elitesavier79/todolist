@@ -22,11 +22,10 @@ const Todolist = () => {
 
   const showAddToggle = () => setShowAdd(!showAdd);
 
-
   return (
     <Paper>
-      <Header showAddToggle={showAddToggle} />
-      <Todoform addTodo={addTodo} />
+      <Header showAddToggle={showAddToggle} showAdd={showAdd} />
+      <Todoform addTodo={addTodo} showAdd={showAdd} />
       <Todos todos={todos} />
     </Paper>
   );

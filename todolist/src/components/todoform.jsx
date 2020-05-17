@@ -1,35 +1,49 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-const Todoform = ({addTodo}) => {
+const Todoform = ({ addTodo, showAdd }) => {
   const [value, setValue] = useState("");
 
   const handleFormSubmit = e => {
     e.preventDefault();
 
-   if (!value) {
-     alert("no blank Text..!!!");
-     return;
+    if (!value) {
+      alert("no blank text!");
+      return;
+    }
+
+    if (value.length > 35) {
+      alert("Please create a shorter text");
+      setValue("");
+      return;
     }
 
     addTodo(value);
-    alert(value);
     setValue("");
-
   };
 
- return (
-    <section className="add" >
+  if (showAdd) {
+    return (
+      <section className="add">
         <form className="add-form" onSubmit={handleFormSubmit}>
-          <input type="text" className="add-input" value={value} onChange={e => setValue(e.target.value)}/>
+          <input
+            type="text"
+            className="add-input"
+            value={value}
+            onChange={e => setValue(e.target.value)}
+          />
           <button className="add-btn main-black-color">Add</button>
         </form>
-    </section>
-  );
+      </section>
+    );
+  } else {
+    return null;
+  }
 };
 
 Todoform.propTypes = {
-  addTodo : PropTypes.func.isRequired
+  addTodo: PropTypes.func.isRequired,
+  showAdd: PropTypes.bool.isRequired
 };
 
 export default Todoform;
