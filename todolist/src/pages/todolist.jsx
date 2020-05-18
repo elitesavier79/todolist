@@ -15,9 +15,12 @@ const Todolist = () => {
   const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = value => {
+    if(todos.length < 10){
     const addedTodo = [...todos, { text: value, isCompleted: false }];
-
     setTodos(addedTodo);
+    } else {
+      alert("only 10 todos isi allowed")
+    }
   };
 
   const completeTodo = index => {
