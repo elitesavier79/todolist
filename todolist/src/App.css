@@ -41,7 +41,7 @@ html {
   width: 600px;
   height: 700px;
   background-color: #f2eecb;
-  border-radius: 4px;
+  border-radius: 5px;
 
   padding: 35px;
 }
@@ -129,7 +129,7 @@ html {
 .todos{
   display: flex;
   flex-direction: column;
-  min-height: 600px;
+  min-height: 400px;
 }
 .todo {
   position: relative;
