@@ -16,6 +16,14 @@
   color: var(--hitam);
 }
 
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+text-align :right;
+}
+
 html {
   font-size: 10px;
 }
@@ -42,7 +50,6 @@ html {
   height: 700px;
   background-color: #f2eecb;
   border-radius: 5px;
-
   padding: 35px;
 }
 
@@ -57,10 +64,13 @@ html {
 .header {
   display: flex;
   align-items: flex-start;
+  margin-top: -15px;
+
 }
 
 .header-title {
-  flex: 1;
+  margin-top: 40px;
+  width: 55%;
   text-align: center;
   color: var(--hitam);
   font-size: 3.6rem;
@@ -70,6 +80,7 @@ html {
 }
 
 .header-btn {
+  width: 25%;
   font-size: 1.8rem;
   font-family: "bungee", sans-serif;
   padding: 16px;
@@ -81,6 +92,7 @@ html {
 
 .header-btn.main-red-color:active {
   text-shadow: 1px 1px 2px var(--merah);
+
 }
 
 .header-btn.main-black-color:active {
@@ -159,4 +171,5 @@ html {
 .span-text {
   font-family: "bungee", sans-serif;
   font-size: 24px;
+  color:orange;
 }
