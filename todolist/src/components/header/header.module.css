@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -15px;
+
+}
+
+.headerTitle {
+  margin-top: 40px;
+  width: 55%;
+  text-align: center;
+  color: var(--hitam);
+  font-size: 3.6rem;
+  font-family: "homemade Apple", sans-serif;
+  text-transform: lowercase;
+
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Paper from "../components/paper";
-import Header from "../components/header";
+import Header from "../components/header/header";
 import Todoform from "../components/todoform";
 import Todos from "../components/todos";
 
@@ -19,7 +19,7 @@ const Todolist = () => {
       const addedTodo = [...todos, { text: value, isCompleted: false }];
       setTodos(addedTodo);
     } else {
-      alert("only 8 todos isi allowed");
+      alert("Maaf.. Tidak boleh melebihi dari 8 baris");
     }
   };
 
