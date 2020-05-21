@@ -1,0 +1,35 @@
+.mainRedColor {
+  color: var(--merah);
+}
+
+.mainBlackColor {
+  color: var(--hitam);
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+text-align :right;
+}
+
+.headerBtn {
+  width: 25%;
+  font-size: 1.8rem;
+  font-family: "bungee", sans-serif;
+  padding: 16px;
+  cursor: pointer;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.headerBtn.mainRedColor:active {
+  text-shadow: 1px 1px 2px var(--merah);
+
+}
+
+.headerBtn.mainBlackColor:active {
+  text-shadow: 1px 1px 2px var(--hitam);
+}
