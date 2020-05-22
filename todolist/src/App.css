@@ -31,11 +31,7 @@ html {
 
 
 
-.todos{
-  display: flex;
-  flex-direction: column;
-  min-height: 400px;
-}
+
 .todo {
   position: relative;
   flex:1 0 auto;
@@ -54,15 +50,3 @@ html {
   transition: translate(-30%);
 }
 
-.todos-text {
-  font-family: "homemade Apple", sans-serif;
-  font-size: 24px;
-  text-align: center;
-  padding: 16px;
-}
-
-.span-text {
-  font-family: "bungee", sans-serif;
-  font-size: 24px;
-  color:orange;
-}
