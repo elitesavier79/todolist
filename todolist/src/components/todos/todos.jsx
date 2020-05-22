@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Todo from "../todo";
+import Todo from "../todo/todo";
 
 import styles from "./todos.module.css";
 
