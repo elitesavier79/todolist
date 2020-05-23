@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-import styles from "./button.module.css";
 import bt from "classnames";
+
+//import styles from "./button.module.css";
+import * as styles from './button.styles';
+
 
 const Button = ({ text, onClick, color, align }) => {
 	//const className = [
@@ -14,16 +16,20 @@ const Button = ({ text, onClick, color, align }) => {
 
 	//].join(" ");
 
-	const classNames = bt(styles.headerBtn, {
-		[styles.mainRedColor]: color === 'red',
-		[styles.mainBlackColor]: color === 'black',
-		[styles.alignLeft]: align === 'left',
-		[styles.alignRight]: align === 'right'
+	//const classNames = bt(styles.headerBtn, {
+		//[styles.mainRedColor]: color === 'red',
+		//[styles.mainBlackColor]: color === 'black',
+		//[styles.alignLeft]: align === 'left',
+		//[styles.alignRight]: align === 'right'
 		
-	})
+	//})
 
 	return (
-		<button className={classNames} onClick={onClick}>
+		//<button className={classNames} onClick={onClick}>
+		//{text}
+		//</button>
+
+		<button css={styles.button({ align, color })} onClick={onClick}>
 		{text}
 		</button>
 	);
