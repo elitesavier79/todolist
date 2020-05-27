@@ -1,13 +1,17 @@
-import React from "react";
+/** @jsx jsx */ 
+//import React from "react";
+import { jsx } from '@emotion/core'
 import PropTypes from "prop-types";
+import { useTheme } from "emotion-theming";
 
-import styles from './paper.module.css';
-
+//import styles from './paper.module.css';
+import * as styles from './paper.styles';
 
 const Paper = ({ children }) => {
+ const theme = useTheme();
   return (
-    <div className={styles.container}>
-      <div className={styles.kerangka}>{children}</div>
+    <div css={styles.paper({ theme })}>
+      <div css={styles.kerangka({ theme })}>{children}</div>
     </div>
   );
 };

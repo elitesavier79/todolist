@@ -10,8 +10,13 @@ const theme = {
 			black: "#484848",
 			red: "#e06262"
 		}
-	}
+	},
 
+	background: {
+		color: {
+			primary: "#f2eecb"
+		}
+	}
 };
 
 export default function App() {
