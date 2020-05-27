@@ -8,12 +8,12 @@ export const header = () =>
 
 	`;
 
-	export const headerTitle = () => 
+	export const headerTitle = theme => 
 		css`
 			margin-top: 40px;
   			width: 55%;
   			text-align: center;
-  			color: var(--hitam);
+  			color: ${theme.color.primary.black};
   			font-size: 3.6rem;
   			font-family: "homemade Apple", sans-serif;
   			text-transform: lowercase;
