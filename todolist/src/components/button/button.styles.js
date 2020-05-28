@@ -12,7 +12,7 @@ export const button = ({ color, align, theme }) => {
 			textColor = primary.black;
 			break;
 		case "red":
-			textColor = primary.red;
+			textColor = primary.blue;
 			break;
 		default:
 			textColor = primary.black;
