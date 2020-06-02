@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 export const paper = ({ theme }) =>
 css`
 	width: 600px;
-  	height: 700px;
+  	height: 800px;
   	background-color: ${theme.background.color.primary};
   	border-radius: 5px;
   	padding: 35px;
@@ -15,7 +15,7 @@ css`
   	display: flex;
   	flex-direction: column;
   	justify-content: space-between;
-	border: 1px solid ${theme.color.primary.black};
-	height: 100%;
+	  border: 1px solid ${theme.color.primary.black};
+	  height: 100%;
 
 `;

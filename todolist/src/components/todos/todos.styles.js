@@ -4,7 +4,7 @@ export const todos = ( ) =>
 	css`
 		display: flex;
   		flex-direction: column;
-  		min-height: 400px;
+  		min-height: 500px;
 	`;
 
 export const todosText = () =>

@@ -16,10 +16,10 @@ export const todo = ( {theme} ) =>
 
 export const todoText = ({theme, isCompleted}) =>
 	css`
-	 position: absolute;
+	  position: absolute;
   	 width: 100%;
-  	 left:1%;
-  	 transition: translate(-30%);
+  	 left:0%;
+  	 transition: translate(-50%);
   	 text-decoration: ${isCompleted ? "line-through" : "initial"};$
   	 color: ${theme.color.primary.black};
   	 height: 50px;

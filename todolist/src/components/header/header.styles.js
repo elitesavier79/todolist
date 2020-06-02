@@ -2,16 +2,16 @@ import { css } from '@emotion/core';
 
 export const header = () => 
 	css`
-		display: flex;
+		  display: flex;
   		align-items: flex-start;
-  		margin-top: -15px;
+  		
 
 	`;
 
 	export const headerTitle = theme => 
 		css`
-			margin-top: 40px;
-  			width: 55%;
+			  margin-top: 40px;
+  		
   			text-align: center;
   			color: ${theme.color.primary.black};
   			font-size: 3.6rem;
@@ -20,5 +20,6 @@ export const header = () =>
 
 		`;
 
+  //width: 55%;
 
-
+//margin-top: -15px;

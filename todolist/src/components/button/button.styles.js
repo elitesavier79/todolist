@@ -19,7 +19,7 @@ export const button = ({ color, align, theme }) => {
 	}
 
 	return css`
-	width: 25%;
+
 	font-size: 1.8rem;
   	font-family: "bungee", sans-serif;
   	color: ${textColor};
@@ -33,7 +33,7 @@ export const button = ({ color, align, theme }) => {
 
   `;
   	
-
+	//width: 25%;
 
 
 };

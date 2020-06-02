@@ -15,11 +15,11 @@ const Todolist = () => {
   const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = value => {
-    if (todos.length < 8) {
+    if (todos.length < 10) {
       const addedTodo = [...todos, { text: value, isCompleted: false }];
       setTodos(addedTodo);
     } else {
-      alert("Maaf.. Tidak boleh melebihi dari 8 baris");
+      alert("Maaf.. Tidak boleh melebihi dari 10 baris");
     }
   };
 

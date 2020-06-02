@@ -2,27 +2,28 @@
 import { jsx, css } from "@emotion/core";
 import PropTypes from "prop-types";
 
-
-
-const Item = ({ children, flex }) => {
-	return {
-		<div
-			className="flex-item"
-			css={css`
-				flex: $(flex);
-		>
-			{children}		`}
-		</div>
-	};
+const Item = ({ children, flex, align }) => {
+  return (
+    <div
+      className="flex-item"
+      css={css`
+        flex: ${flex};
+        text-align: ${align};
+      `}
+    >
+      {children}
+    </div>
+  );
 };
 
 Item.propTypes = {
-	children: PropTypes.oneOf([
-		PropTypes.arryOf(PropTypes.node),
-		PropTypes.node
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
+  Flex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 
-	]),
-	Flex: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  align: PropTypes.oneOfType(["center", "left", "right", "justify"])
 };
 
-Export default Item;
+export default Item;
