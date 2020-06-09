@@ -5,7 +5,8 @@ import { jsx } from "@emotion/core";
 import PropTypes from "prop-types";
 import { useTheme } from "emotion-theming";
 
-import Button from "../button/button";
+//import Button from "../button/button";
+import Button from "../button/ButtonNoJSX";
 import Container from "../../layout/container";
 import Item from "../../layout/item";
 //import styles from './header.module.css';
