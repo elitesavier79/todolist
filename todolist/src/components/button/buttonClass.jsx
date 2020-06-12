@@ -1,9 +1,9 @@
-import react from "react";
+import React from "react";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import { withTheme } from "emotion-theming";
 
-const StyledButton = Styled.button`
+const StyledButton = styled.button`
     font-size: 1.8rem;
     font-family: "bungee", sans-serif;
     color: ${props => props.textColor};
@@ -55,4 +55,4 @@ class Button extends React.Component {
   };
 }
 
-export default withtheme(Button);
+export default withTheme(Button);
