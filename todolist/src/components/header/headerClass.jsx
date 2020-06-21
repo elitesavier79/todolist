@@ -4,13 +4,13 @@ import styled from "@emotion/styled";
 import { withTheme } from "emotion-theming";
 
 import Button from "../button/buttonClass";
-import Container from "../../layout/container";
-import Item from "../../layout/item";
+import Container from "../../layout/containerClass";
+import Item from "../../layout/itemClass";
 
 const StyledH1 = styled.h1`
   margin-top: 30px;
   text-align: center;
-  color: ${props => props.theme.color.primary.black};
+  color: ${props => props.theme.color.primary.blue};
   font-size: 3.6rem;
   font-family: "homemade Apple", sans-serif;
   text-transform: lowercase;
