@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css'; 
 import { ThemeProvider } from "emotion-theming";
 
-//import Todolist from "./pages/todolist";
-import Todolist from "./pages/todolistClass";
+import Todolist from "./pages/todolist";
+//import Todolist from "./pages/todolistClass";
 
 
 const theme = {
