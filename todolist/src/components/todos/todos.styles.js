@@ -21,3 +21,9 @@ export const spanText = () =>
     font-size: 24px;
     color: orange;
   `;
+
+export const aboutPage = () =>
+  css`
+    font-family: "bungee", sans-serif;
+    font-size: 18px;
+  `;

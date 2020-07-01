@@ -4,7 +4,6 @@
 import { jsx } from "@emotion/core";
 import PropTypes from "prop-types";
 import { useTheme } from "emotion-theming";
-import { Link } from "react-router-dom";
 
 //import Button from "../button/button";
 //import Button from "../button/ButtonNoJSX";
@@ -37,7 +36,6 @@ const Header = ({ showAddToggle, showAdd, clearTodos }) => {
         </Item>
         <Item flex={2}>
           <h1 css={styles.headerTitle(theme)}>Todo Lits</h1>
-          <Link to="/about">Ke halaman About</Link>
         </Item>
         <Item flex={1} align="right">
           <Button text="CLEAR" onClick={clearTodos} color="red" align="right" />

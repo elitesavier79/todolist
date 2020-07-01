@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-//import React from "react";
-
+import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 //import Todo from "../todo/todo";
 import Todo from "../todo/todoClass";
 import Container from "../../layout/container";
@@ -70,10 +70,19 @@ const Todos = ({ todos, completeTodo }) => {
             );
           })}
         {todos.length === 0 && (
-          <div css={styles.todosText}>
-            Silakan mengklik tombol <span css={styles.spanText}>add</span> di
-            atas untuk memulai Todo
-          </div>
+          <React.Fragment>
+            <div css={styles.todosText}>
+              Silakan mengklik tombol <span css={styles.spanText}>add</span> di
+              atas untuk memulai Todo
+            </div>
+            <Container justifyContent="center">
+              <Item>
+                <span css={styles.aboutPage}>
+                  <Link to="/about">Or Visit Our Page</Link>
+                </span>
+              </Item>
+            </Container>
+          </React.Fragment>
         )}
       </Container>
     </section>
